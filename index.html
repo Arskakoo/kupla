@@ -30,6 +30,7 @@
 
     <!-- script -->
     <script src="./assets/js/task.js"></script>
+    <script src="./assets/js/shop.js"></script>
 
 </head>
 
@@ -37,9 +38,7 @@
 
     <header>
         <div class="nav">
-            <div class="title" style="margin-top: 3.5%; margin-left: 5%; font-size: smaller; color: gray; float: left;">
-                <h1>Tasklist ︱ 📋</h1>
-            </div>
+
             <div id="myNav" class="overlay">
 
                 <!-- Button to close the overlay navigation -->
@@ -47,10 +46,10 @@
 
                 <!-- Overlay content -->
                 <div class="overlay-content" content="black-translucent">
-                    <a href="#">Tasklist ︱ 📋</a>
-                    <a href="#">Shopping list ︱ 🛒 </a>
-                    <a href="#">Budget ︱ 💲</a>
-                    <a href="#">Settings ︱ ⚙️</a>
+                    <a href="javascript:void(0)" onclick="showSection('TaskList')">Tasklist ︱ 📋</a>
+                    <a href="javascript:void(0)" onclick="showSection('shoppingList')">Shopping list ︱ 🛒</a>
+                    <a href="javascript:void(0)" onclick="showSection('budget')">Budget ︱ 💰</a>
+                    <a href="javascript:void(0)" onclick="showSection('settings')">Settings ︱ ⚙️</a>
                 </div>
             </div>
 
@@ -63,7 +62,12 @@
     </header>
 
     <main>
+
+        <!-- Tehtävälista -->
         <div class="tasklist" id="TaskList">
+            <div class="title" style="margin-top: 3.5%; margin-left: 5%; font-size: smaller; color: gray; float: left;">
+                <h1>Tasklist ︱ 📋</h1>
+            </div>
             <!-- Listat -->
             <div class="list">
                 <ul id="taskList"></ul>
@@ -78,6 +82,26 @@
             </div>
         </div>
 
+        <!-- Ostoslista -->
+        <div class="shoppinglist" id="shoppingList">
+            <!-- Ostokset -->
+            <div class="items">
+                <ul id="shoppingListItems"></ul>
+            </div>
+            <!-- Nappulat -->
+            <div class="addShop">
+                <input type="text" id="ShopItem" placeholder="What do you need">
+                <button id="shoppingButton" onclick="addItem()">
+                    <span class="material-symbols-rounded">arrow_forward_ios</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Budget -->
+        <div class="budget" id="budget"></div>
+
+        <!-- settings -->
+        <div class="settings" id="settings"></div>
     </main>
     <footer>
     </footer>

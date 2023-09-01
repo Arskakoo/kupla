@@ -239,15 +239,18 @@ li>p {
 }
 
 
-#taskList li {
-    position: relative;
-    transition: transform 0.3s ease;
+
+.tasklist,
+.shoppinglist,
+.budget,
+.settings {
+    display: none;
 }
 
-#taskList li.swipe-left {
-    transform: translateX(-100%);
-}
-
-#taskList li.swipe-left {
-    transform: translateX(-100%);
+/* Style the navigation links */
+.overlay-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
