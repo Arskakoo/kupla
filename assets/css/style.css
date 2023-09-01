@@ -105,6 +105,7 @@ footer {}
     width: 270px;
     font-size: large;
     background-color: var(--bgc);
+    outline: none;
 }
 
 
@@ -112,15 +113,16 @@ footer {}
 .add button {
     padding: 10px;
     border: var(--light-blue) 3px solid;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-left: 2%;
     background-color: var(--bgc);
+    text-align: center;
+    color: var(--light-blue);
+
 }
 
 .add button:hover {
-    border-color: var(--light-blue);
     cursor: pointer;
-    background-color: var(--light-blue);
 }
 
 ul {}
@@ -135,12 +137,20 @@ li {
     border-radius: 12px;
     background-color: var(--light-blue);
     color: white;
+    display: block;
 }
 
-li>#text {
-    float: left;
+li>span {
+    float: right;
+    color: var(--dark-blue);
+    font-size: large;
+    font-weight: 600;
 }
 
+li>p {
+    max-width: 90%;
+    display: inline-block;
+}
 
 .timestamp {
     float: right;

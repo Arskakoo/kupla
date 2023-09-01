@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
 
     savedTasks.forEach(function (task) {
         const li = createTaskElement(task.text, task.timestamp);
-        taskList.appendChild(li, id = "tasktext");
+        taskList.appendChild(li);
     });
 });
 
@@ -31,7 +31,10 @@ function tallennaTieto() {
 
 function createTaskElement(taskText, timestamp) {
     const li = document.createElement('li');
-    li.textContent = taskText;
+
+    const text = document.createElement('p');
+    text.textContent = taskText;
+    li.appendChild(text);
 
     const timeSpan = document.createElement('span');
     timeSpan.textContent = timestamp;
