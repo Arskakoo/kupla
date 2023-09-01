@@ -111,14 +111,18 @@ footer {}
 
 
 .add button {
-    padding: 10px;
     border: var(--light-blue) 3px solid;
     border-radius: 10px;
     margin-left: 2%;
     background-color: var(--bgc);
     text-align: center;
     color: var(--light-blue);
+    width: 50px;
+    height: 50px;
+}
 
+.add button span {
+    margin-top: 10%;
 }
 
 .add button:hover {
