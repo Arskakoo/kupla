@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
 
     savedTasks.forEach(function (task) {
         const li = createTaskElement(task.text, task.timestamp);
-        taskList.appendChild(li);
+        taskList.appendChild(li, id = "tasktext");
     });
 });
 

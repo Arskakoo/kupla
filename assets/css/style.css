@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root {
-    --blue: rgb(46, 24, 186);
-    --light-blue: rgb(96, 123, 231);
+    --blue: #2929CC;
+    --light-blue: #6677CC;
+    --dark-blue: #141466;
+    --bgc: #DADAE6;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +36,7 @@ html,
 body {
     min-height: 100vh !important;
     max-width: 100vw !important;
+    background-color: var(--bgc);
 }
 
 body {
@@ -96,26 +99,54 @@ footer {}
 }
 
 .add input {
-    border: var(--blue) 3px solid;
+    border: var(--light-blue) 3px solid;
     border-radius: 12px;
     padding: 10px;
     width: 270px;
     font-size: large;
+    background-color: var(--bgc);
 }
 
-.add input:focus {
-    border-color: var(--blue);
-}
+
 
 .add button {
     padding: 10px;
-    border: var(--blue) 3px solid;
-    border-radius: 12px;
+    border: var(--light-blue) 3px solid;
+    border-radius: 8px;
     margin-left: 2%;
+    background-color: var(--bgc);
 }
 
 .add button:hover {
     border-color: var(--light-blue);
     cursor: pointer;
     background-color: var(--light-blue);
+}
+
+ul {}
+
+li {
+    margin-left: 10%;
+    list-style: none;
+    margin-top: 1%;
+    border: var(--light-blue) solid 2px;
+    margin-right: 10%;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background-color: var(--light-blue);
+    color: white;
+}
+
+li>#text {
+    float: left;
+}
+
+
+.timestamp {
+    float: right;
+}
+
+.list {
+    margin-top: 5%;
+    margin-bottom: 30%;
 }
