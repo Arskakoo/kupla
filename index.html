@@ -35,8 +35,31 @@
 <body>
 
     <header>
-        <div class="title" style="margin-top: 3.5%; margin-left: 3.5%; font-size: smaller; color: gray;">
-            <h1>Todays tasks</h1>
+        <div class="nav">
+            <div class="title" style="margin-top: 3.5%; margin-left: 5%; font-size: smaller; color: gray; float: left;">
+                <h1>Todays tasks</h1>
+            </div>
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#">Todays task</a>
+                    <a href="#">Shopping list</a>
+                    <a href="#">Budget</a>
+                    <a href="#">Important</a>
+                </div>
+
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()" style="float: right; margin-top: 5%; margin-right: 5%; color: gray;"><span
+                    class="material-symbols-rounded">
+                    menu
+                </span></span>
+            <script src="./assets/js/navbar.js"></script>
         </div>
 
     </header>
