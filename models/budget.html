@@ -7,7 +7,7 @@
     <meta name="google" value="notranslate">
     <meta name="google" content="notranslate">
     <!-- Css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="./assets/img/logo-bg.png" type="image/x-icon">
 
     <!-- script -->
-    <script src="../assets/js/task.js"></script>
+    <script src="./assets/js/task.js"></script>
 
 </head>
 
@@ -38,7 +38,7 @@
     <header>
         <div class="nav">
             <div class="title" style="margin-top: 3.5%; margin-left: 5%; font-size: smaller; color: gray; float: left;">
-                <h1>Tasklist ︱ 📋</h1>
+                <h1>Todays tasks</h1>
             </div>
             <div id="myNav" class="overlay">
 
@@ -47,10 +47,10 @@
 
                 <!-- Overlay content -->
                 <div class="overlay-content" content="black-translucent">
-                    <a href="../index.html">Tasklist ︱ 📋</a>
-                    <a href="../models/shoppinglist.html">Shopping list ︱ 🛒 </a>
-                    <a href="../models/budget.html">Budget ︱ 💲</a>
-                    <a href="../models/settings.html">Settings ︱ ⚙️</a>
+                    <a href="#">Todays task</a>
+                    <a href="#">Shopping list</a>
+                    <a href="#">Budget</a>
+                    <a href="#">Settings</a>
                 </div>
 
             </div>
@@ -58,27 +58,7 @@
             <!-- Use any element to open/show the overlay navigation menu -->
             <span onclick="openNav()" style="float: right; margin-top: 5%; margin-right: 5%; color: gray;"
                 class="material-symbols-rounded">menu</span>
-            <script src="../assets/js/navbar.js"></script>
+            <script src="./assets/js/navbar.js"></script>
         </div>
 
     </header>
-
-    <main>
-        <!-- Listat -->
-        <div class="list">
-            <ul id="taskList"></ul>
-            <ul id="tallennetutTiedot"></ul>
-        </div>
-        <!-- Nappulat -->
-        <div class="add">
-            <input type="text" id="tietokentta" placeholder="Add task">
-            <button id="tallennanappula" onclick="tallennaTieto()">
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </button>
-        </div>
-    </main>
-    <footer>
-    </footer>
-</body>
-
-</html>
