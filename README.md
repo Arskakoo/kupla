@@ -9,3 +9,5 @@ Kupla is made with javascript, using html and css. It stores tasks locally in me
 3. Add to home menu
 4. Click add button
 
+## Application
+

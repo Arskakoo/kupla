@@ -66,3 +66,13 @@ function getCurrentTime() {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     return hours + ':' + minutes;
 }
+
+function enterListener() {
+    document.getElementById("tietokentta").addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            var x = document.getElementById("CityForm");
+            x.submit();
+            return false;
+        }
+    });
+}
