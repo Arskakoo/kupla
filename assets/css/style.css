@@ -130,13 +130,12 @@ ul {}
 li {
     margin-left: 10%;
     list-style: none;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-right: 10%;
-    padding: 10px 16px;
+    padding: 15px 16px;
     border-radius: 12px;
-    background: rgb(120, 134, 205);
-    background: linear-gradient(153deg, rgba(120, 134, 205, 1) 0%, rgba(80, 80, 231, 1) 100%);
-    background-color: var(--light-blue);
+    background: rgb(133, 150, 238);
+    background: linear-gradient(166deg, rgba(133, 150, 238, 1) 0%, rgba(79, 79, 235, 1) 100%);
     color: white;
     display: block;
 }
