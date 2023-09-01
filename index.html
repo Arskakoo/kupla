@@ -47,10 +47,10 @@
 
                 <!-- Overlay content -->
                 <div class="overlay-content" content="black-translucent">
-                    <a href="./index.html">Tasklist ︱ 📋</a>
-                    <a href="./models/shoppinglist.html">Shopping list ︱ 🛒 </a>
-                    <a href="./models/budget.html">Budget ︱ 💲</a>
-                    <a href="./models/settings.html">Settings ︱ ⚙️</a>
+                    <a href="">Tasklist ︱ 📋</a>
+                    <a href="">Shopping list ︱ 🛒 </a>
+                    <a href="">Budget ︱ 💲</a>
+                    <a href="">Settings ︱ ⚙️</a>
                 </div>
             </div>
 
@@ -63,18 +63,21 @@
     </header>
 
     <main>
-        <!-- Listat -->
-        <div class="list">
-            <ul id="taskList"></ul>
-            <ul id="tallennetutTiedot"></ul>
+        <div class="tasklist" id="TaskList">
+            <!-- Listat -->
+            <div class="list">
+                <ul id="taskList"></ul>
+                <ul id="tallennetutTiedot"></ul>
+            </div>
+            <!-- Nappulat -->
+            <div class="add">
+                <input type="text" id="tietokentta" placeholder="Add task">
+                <button id="tallennanappula" onclick="tallennaTieto()">
+                    <span class="material-symbols-rounded">arrow_forward_ios</span>
+                </button>
+            </div>
         </div>
-        <!-- Nappulat -->
-        <div class="add">
-            <input type="text" id="tietokentta" placeholder="Add task">
-            <button id="tallennanappula" onclick="tallennaTieto()">
-                <span class="material-symbols-rounded">arrow_forward_ios</span>
-            </button>
-        </div>
+
     </main>
     <footer>
     </footer>
