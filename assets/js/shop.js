@@ -15,7 +15,7 @@ function addItem() {
     localStorage.setItem('shoppingItems', JSON.stringify(savedItems));
 
     inputField.value = '';
-} indow.addEventListener('load', function () {
+} window.addEventListener('load', function () {
     const shoppingListItems = document.getElementById('shoppingListItems');
     const savedItems = JSON.parse(localStorage.getItem('shoppingItems')) || [];
 

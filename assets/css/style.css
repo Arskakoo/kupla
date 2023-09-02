@@ -197,6 +197,7 @@ li>p {
     /* Centered text/links */
     margin-top: 30px;
     /* 30px top margin to avoid conflict with the close button on smaller screens */
+
 }
 
 /* The navigation links inside the overlay */
@@ -204,7 +205,7 @@ li>p {
     padding: 8px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;
@@ -214,7 +215,7 @@ li>p {
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
 /* Position the close button (top right corner) */
@@ -252,5 +253,88 @@ li>p {
     display: block;
     padding: 10px;
     text-decoration: none;
+    color: black;
+}
+
+.title {
+
+    margin-left: 5%;
+    font-size: larger;
+    display: inline-block;
+    position: absolute;
+}
+
+.sticky-note {
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    z-index: 0;
+    font-size: 25px;
+    float: left;
+
+}
+
+/* shoppinglist */
+
+.addShop {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    display: flex;
+
+}
+
+
+.addShop button,
+.addShop input {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.addShop input {
+    border: var(--light-blue) 3px solid;
+    border-radius: 12px;
+    padding: 10px;
+    width: 200px;
+    font-size: large;
+    background-color: var(--bgc);
+    outline: none;
+}
+
+
+
+.addShop button {
+    border: var(--light-blue) 3px solid;
+    border-radius: 10px;
+    margin-left: 2%;
+    background-color: var(--bgc);
+    text-align: center;
+    color: var(--light-blue);
+    width: 60px;
+    height: 50px;
+}
+
+.addShop button span {
+    margin-top: 10%;
+}
+
+.addShop button:hover {
+    cursor: pointer;
+}
+
+.items {
+    margin-top: 10%;
+}
+
+#shoppingListItems>li {
+    background: rgb(246, 255, 99);
+    background: linear-gradient(90deg, rgb(255, 213, 99) 0%, rgba(246, 173, 57, 1) 100%);
     color: black;
 }
