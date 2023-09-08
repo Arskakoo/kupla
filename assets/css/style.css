@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --blue: #2929CC;
     --light-blue: #6677CC;
     --dark-blue: #141466;
-    --bgc: #bbbbbb;
+    --bgc: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -84,7 +84,7 @@ footer {}
 }
 
 .add input {
-    border: gray 4px solid;
+    border: rgb(156, 156, 156) 4px solid;
     border-radius: 12px;
     padding: 10px;
     height: 50px;
