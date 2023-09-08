@@ -125,14 +125,14 @@ li {
     border-radius: 12px;
     background: rgb(114,137,254);
     background: linear-gradient(66deg, rgba(114,137,254,1) 0%, rgba(86,86,233,1) 100%);
-    color: rgb(204, 204, 204);
+    color: white;
     display: block;
     font-size: large;
 }
 
 li>span {
     float: right;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: large;
     font-weight: 600;
 }
@@ -150,3 +150,15 @@ li>p {
     margin-top: 5%;
     margin-bottom: 30%;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+  }
