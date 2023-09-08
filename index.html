@@ -35,40 +35,12 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="nav">
-
-            <div id="myNav" class="overlay">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <!-- Overlay content -->
-                <div class="overlay-content" content="black-translucent">
-                    <a href="javascript:void(0)" onclick="showSection('TaskList')" style="color: white;">Tasklist ︱
-                        📋</a>
-                    <a href="javascript:void(0)" onclick="showSection('shoppingList')" style="color: white;">Shopping
-                        list ︱ 🛒</a>
-                    <a href=" javascript:void(0)" onclick="showSection('budget')" style="color: white;">Budget ︱ 💰</a>
-                    <a href=" javascript:void(0)" onclick="showSection('settings')" style="color: white;">Settings ︱
-                        ⚙️</a>
-                </div>
-            </div>
-
-            <!-- Use any element to open/show the overlay navigation menu -->
-            <span onclick=" openNav()" style="float: right; margin-top: 5%; margin-right: 5%; color: gray;"
-                class="material-symbols-rounded">menu</span>
-            <script src="./assets/js/navbar.js"></script>
-
-
-
-    </header>
-
     <main>
 
         <!-- Tehtävälista -->
         <div class="tasklist" id="TaskList">
             <div class="sticky-note">
-                <p>Tasklist ︱ 📋</p>
+                <p style="margin-top: 4%; margin-left: 4%; font-size: 30px;">Tasklist ︱ 📋</p>
             </div>
             <!-- Listat -->
             <div class="list" style="margin-top: 10%;">
@@ -84,38 +56,6 @@
             </div>
         </div>
 
-        <!-- Ostoslista -->
-        <div class="shoppinglist" id="shoppingList">
-            <div class="sticky-note">
-                <p>Shopping list ︱ 🛒</p>
-            </div>
-            <!-- Ostokset -->
-            <div class="items">
-                <ul id="shoppingListItems"></ul>
-
-            </div>
-            <!-- Nappulat -->
-            <div class="addShop">
-                <input type="text" id="ShopItem" placeholder="What do you need">
-                <button id="shoppingButton" onclick="addItem()">
-                    <span class="material-symbols-rounded">arrow_forward_ios</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Budget -->
-        <div class="budget" id="budget">
-            <div class="sticky-note">
-                <p>Budget ︱ 💰</p>
-            </div>
-        </div>
-
-        <!-- settings -->
-        <div class="settings" id="settings">
-            <div class="sticky-note">
-                <p>Settings ︱ ⚙️</p>
-            </div>
-        </div>
     </main>
     <footer>
     </footer>
