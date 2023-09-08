@@ -84,10 +84,10 @@ footer {}
 }
 
 .add input {
-    border: var(--light-blue) 3px solid;
+    border: var(--light-blue) 4px solid;
     border-radius: 12px;
     padding: 10px;
-    width: 200px;
+    width: 250px;
     font-size: large;
     background-color: var(--bgc);
     outline: none;
@@ -99,10 +99,9 @@ footer {}
     border: var(--light-blue) 3px solid;
     border-radius: 10px;
     margin-left: 2%;
-
     text-align: center;
     color: var(--bgc);
-    width: 60px;
+    width: 50px;
     height: 50px;
     background-color: var(--light-blue);
 }
