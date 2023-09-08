@@ -96,7 +96,7 @@ footer {}
 
 
 .add button {
-    border: var(--light-blue) 3px solid;
+    border: var(--light-blue) 4px solid;
     border-radius: 10px;
     margin-left: 2%;
     text-align: center;
