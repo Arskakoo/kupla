@@ -4,7 +4,7 @@
     --blue: #2929CC;
     --light-blue: #6677CC;
     --dark-blue: #141466;
-    --bgc: #DADAE6;
+    --bgc: #bbbbbb;
 }
 
 ::-webkit-scrollbar {
@@ -123,15 +123,16 @@ li {
     margin-right: 10%;
     padding: 15px 16px;
     border-radius: 12px;
-    background: rgb(133, 150, 238);
-    background: linear-gradient(166deg, rgba(133, 150, 238, 1) 0%, rgba(79, 79, 235, 1) 100%);
-    color: white;
+    background: rgb(114,137,254);
+    background: linear-gradient(66deg, rgba(114,137,254,1) 0%, rgba(86,86,233,1) 100%);
+    color: rgb(204, 204, 204);
     display: block;
+    font-size: large;
 }
 
 li>span {
     float: right;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: large;
     font-weight: 600;
 }
